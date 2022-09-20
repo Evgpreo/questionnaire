@@ -15,7 +15,7 @@ if (producerN === 3) {
 	alert(`Увы, вы заработали ${x} балл`);
 }
 
-let points;
+
 let premium;
 premium = prompt('Самая знаменитая кинопремия? 1 - Оскар 2 - Кинотавр 3 - МузТв');
 
