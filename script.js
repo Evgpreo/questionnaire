@@ -1,4 +1,5 @@
 let producer;
+
 producer = prompt('Кто режессер фильма Престиж? 1 - Квентин Тарантино 2 - Ридли Скотт 3 - Кристофер Нолан');
 
 let producerN = Number(producer);
@@ -14,12 +15,13 @@ if (producerN === 3) {
 	alert(`Увы, вы заработали ${x} балл`);
 }
 
+let points;
 let premium;
 premium = prompt('Самая знаменитая кинопремия? 1 - Оскар 2 - Кинотавр 3 - МузТв');
 
 let premiumN = Number(premium);
 
-let y = 0;
+let y = 1;
 
 if (premiumN === 1) {
 	y++;
@@ -35,7 +37,7 @@ marvel = prompt('Какая существует киновселенная? 1 -
 
 let marvelN = Number(marvel);
 
-let z = 0;
+let z = 2;
 
 if (marvelN === 2) {
 	z++;
