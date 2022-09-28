@@ -1,12 +1,17 @@
-let producer;
 let points = 0;
+let doCycle;
+
+//первый вопрос
 
 do {
-producer = prompt('Кто режессер фильма Престиж? \n1 - Квентин Тарантино \n 2 - Ридли Скотт \n 3 - Кристофер Нолан');
+doCycle = true;
+let = answerNative = prompt('Кто режессер фильма Престиж? \n 1 - Квентин Тарантино \n 2 - Ридли Скотт \n 3 - Кристофер Нолан \n 4 - Мартин Скорсезе' );
 
-let producerN = Number(producer);
+let producerN = Number(answerNative);
 
-
+if (producerN === 1 || producerN === 2 || producerN === 3 || producerN === 4 || answerNative === null) {
+	doCycle = false
+}
 
 if (producerN === 3) {
 	let pointsShow = 1;
@@ -14,70 +19,105 @@ if (producerN === 3) {
 	alert(`Поздравляю! Вы заработали ${pointsShow} балл`);
 	}
 
-} while (producer == 0 || producer > 3 || producer === '' );
+} while (doCycle);
 
-
-let premium;
+//второй вопрос
 
 do {
-premium = prompt('Самая знаменитая кинопремия? \n 1 - Оскар \n 2 - Кинотавр \n 3 - МузТв');
+doCycle = true;
+let = answerNative = prompt('Самая знаменитая кинопремия? \n 1 - Оскар \n 2 - Кинотавр \n 3 - МузТв \n 4 - Синяя малина');
 
-let premiumN = Number(premium);
+let premiumN = Number(answerNative);
+
+if (premiumN === 1 || premiumN === 2 || premiumN === 3 || premiumN === 4 || answerNative === null) {
+	doCycle = false
+}
 
 if (premiumN === 1) {
 	let pointsShow = 1;
 	points = points + pointsShow;
 	alert(`Поздравляю! Вы заработали ${pointsShow} балл`);
 	}
-} while ( premium == 0 || premium > 3 || premium === '' );
 
-let marvel;
+} while ( doCycle);
+
+
+//третий вопрос
 
 do {
-marvel = prompt('Какая существует киновселенная? \n 1 - Фейсбук \n 2 - Марвел \n 3 - Твиттер');
+doCycle = true;
+let = answerNative = prompt('Какая существует киновселенная? \n 1 - Фейсбук \n 2 - Марвел \n 3 - Твиттер \n 4 - Стивена Хокинга');
 
-let marvelN = Number(marvel);
+let marvelN = Number(answerNative);
+
+if (marvelN === 1 || marvelN === 2 || marvelN === 3 || marvelN === 4 || answerNative === null) {
+	doCycle = false
+}
 
 if (marvelN === 2) {
 	let pointsShow = 2;
 	points = points + pointsShow;
 	alert(`Поздравляю! Вы заработали ${pointsShow} балл`);
 	}
-} while ( marvel == 0 || marvel > 3 || marvel === '' );
+} while ( doCycle);
 
-
-let timeMachine;
+//четвертый вопрос
 
 do {
-timeMachine = prompt('Как называется машина времени в фильме "Назад в будущее"? \n 1 - DeLorean \n 2 - Ford Mustang \n 3 - Ford Focus')
+doCycle = true;
+let = answerNative = prompt('Как называется машина времени в фильме "Назад в будущее"? \n 1 - DeLorean \n 2 - Ford Mustang \n 3 - Ford Focus \n 4 - Москвич 2140')
 
-let timeMachineN = Number(timeMachine);
+let timeMachineN = Number(answerNative);
+
+if (timeMachineN === 1 || timeMachineN === 2 || timeMachineN === 3 || timeMachineN === 4 || answerNative === null){
+	doCycle = false
+}
 
 if (timeMachineN === 1) {
 	let pointsShow = 2;
 	points = points + pointsShow;
 	alert(`Поздравляю! Вы заработали ${pointsShow} балл`);
 	}
-} while ( timeMachine === 0 || timeMachine > 3 || timeMachine === '' );
+} while ( doCycle);
 
-let nameMovie;
-
+//пятый вопрос
 do {
-nameMovie = prompt('Продолжите название фильма:  "Зеленая ..." \n 1 - бочка \n 2 - вишня \n 3 - миля');
+doCycle = true;
+let = answerNative = prompt('Продолжите название фильма:  "Зеленая ..." \n 1 - бочка \n 2 - вишня \n 3 - миля \n 4 - карта');
 
-let nameMovieN = Number(nameMovie);
+let nameMovieN = Number(answerNative);
+
+if (nameMovieN === 1 || nameMovieN === 2 || nameMovieN === 3 || nameMovieN === 4 || answerNative === null) {
+	doCycle = false
+}
 
 if (nameMovieN === 3) {
 	let pointsShow = 3;
 	points = points + pointsShow;
-	alert(`Поздравляю! Вы заработали ${pointsShow } балл`);
+	alert(`Поздравляю! Вы заработали ${pointsShow } балл`)
 }else{
-	alert('Уверен? Это был последний вопрос!');
+	alert('Уверен? Это был последний вопрос!')
 	}
-} while ( nameMovie === 0 || nameMovie > 3 || nameMovie === '' );
+} while (doCycle);
 
 
-alert(`Итого у вас ${points} балла`);
+//склонение слова балл
+
+let namePoints = Number;
+namePoints = points;
+
+if (namePoints === 1) {
+	alert(`Итого у вас ${points} балл`)
+}
+
+else if (namePoints >= 2 && namePoints <= 4) {
+	alert(`Итого у вас ${points} балла`)
+}else {
+	alert(`Итого у вас ${points} баллов`)
+}
+
+
+// alert(`Итого у вас ${points} балла`);
 
 
 
